@@ -8,31 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Formulario Validado</title>
 </head>
-
 <body>
-    <form id="formulario">
-        <h2>Formulario de Registro</h2>
-        <div class="form-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name">
-            <div class="error-message" id="nameError"></div>
-        </div>
-        <div class="form-group">
-            <label for="email">Correo Electrónico:</label>
-            <input type="text" id="email" name="email">
-            <div class="error-message" id="emailError"></div>
-        </div>
-        <div class="form-group">
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password">
-            <div class="error-message" id="passwordError"></div>
-        </div>
-        <button type="submit">Enviar</button>
-    </form>
-
+    <div class="container" id = "contenerdor">
+        <form id="formulario">
+            <h2>Formulario de Registro</h2>
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="text" id="email" name="email">
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore-compat.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
